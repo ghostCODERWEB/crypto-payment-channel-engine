@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crypto-payment-channel-engine"
+version = "0.1.0"
+description = "Simulate off-chain channel updates, challenge windows, stale-state disputes and conserved settlement."
+requires-python = ">=3.11"
+license = "MIT"
+
+[project.scripts]
+crypto-payment-channel-engine = "cryptolab:main"
+
+[tool.setuptools.packages.find]
+include = ["cryptolab*"]
+
+[tool.setuptools.package-data]
+cryptolab = ["web/*"]

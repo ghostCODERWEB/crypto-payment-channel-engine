@@ -1,0 +1,18 @@
+{
+  "capacity": 200,
+  "closing_nonce": null,
+  "deadline": null,
+  "events": [],
+  "latest_nonce": 0,
+  "settlement": null,
+  "states": {
+    "0": {
+      "balances": {
+        "alice": 100,
+        "bob": 100
+      },
+      "commitment": "60190a9bb81a7a88875f7101b76060c4f9ee51165359c27320e28465ce2e0bda"
+    }
+  },
+  "status": "open"
+}

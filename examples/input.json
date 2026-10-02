@@ -1,0 +1,15 @@
+{
+  "channel": {
+    "id": "channel1",
+    "parties": [
+      "alice",
+      "bob"
+    ],
+    "deposits": {
+      "alice": 100,
+      "bob": 100
+    },
+    "challenge_period": 10
+  },
+  "events": []
+}
