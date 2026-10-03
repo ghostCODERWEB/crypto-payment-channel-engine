@@ -1,10 +1,42 @@
 {
   "capacity": 200,
-  "closing_nonce": null,
-  "deadline": null,
-  "events": [],
-  "latest_nonce": 0,
-  "settlement": null,
+  "closing_nonce": 1,
+  "deadline": 12,
+  "events": [
+    {
+      "closing_nonce": null,
+      "deadline": null,
+      "latest_nonce": 1,
+      "status": "open",
+      "type": "update"
+    },
+    {
+      "closing_nonce": 0,
+      "deadline": 12,
+      "latest_nonce": 1,
+      "status": "challenging",
+      "type": "close"
+    },
+    {
+      "closing_nonce": 1,
+      "deadline": 12,
+      "latest_nonce": 1,
+      "status": "challenging",
+      "type": "challenge"
+    },
+    {
+      "closing_nonce": 1,
+      "deadline": 12,
+      "latest_nonce": 1,
+      "status": "settled",
+      "type": "settle"
+    }
+  ],
+  "latest_nonce": 1,
+  "settlement": {
+    "alice": 50,
+    "bob": 150
+  },
   "states": {
     "0": {
       "balances": {
@@ -12,7 +44,14 @@
         "bob": 100
       },
       "commitment": "60190a9bb81a7a88875f7101b76060c4f9ee51165359c27320e28465ce2e0bda"
+    },
+    "1": {
+      "balances": {
+        "alice": 50,
+        "bob": 150
+      },
+      "commitment": "8a084897a075f8ed267e53a1b509c626b8ba0f1929b135c58b348e30cace736f"
     }
   },
-  "status": "open"
+  "status": "settled"
 }

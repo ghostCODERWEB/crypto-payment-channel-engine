@@ -11,5 +11,36 @@
     },
     "challenge_period": 10
   },
-  "events": []
+  "events": [
+    {
+      "type": "update",
+      "nonce": 1,
+      "balances": {
+        "alice": 50,
+        "bob": 150
+      },
+      "approvals": [
+        "alice",
+        "bob"
+      ],
+      "commitment": "8a084897a075f8ed267e53a1b509c626b8ba0f1929b135c58b348e30cace736f",
+      "timestamp": 1
+    },
+    {
+      "type": "close",
+      "actor": "bob",
+      "nonce": 0,
+      "timestamp": 2
+    },
+    {
+      "type": "challenge",
+      "actor": "alice",
+      "nonce": 1,
+      "timestamp": 3
+    },
+    {
+      "type": "settle",
+      "timestamp": 12
+    }
+  ]
 }
